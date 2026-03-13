@@ -8,139 +8,143 @@
     <title>Practice Home Page</title>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header class="navigation">
-      <nav>
+      <nav aria-label="Primary navigation">
         <ul>
           <h1>Bryson Corcoran</h1>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="bento-grid.html">Bento Grid</a></li>
         </ul>
       </nav>
     </header>
-    <section>
-      <div class="hero">
-        <img src="./images/hero.jpg" alt="Hero Image" class="hero-image" />
-        <div class="hero-content">
-          <h2>Welcome to My Resume Page</h2>
-          <a href="resume.html">Visit my Resume</a>
+    <main id="main-content">
+      <section>
+        <div class="hero">
+          <img src="./images/hero.jpg" alt="Hero Image" class="hero-image" />
+          <div class="hero-content">
+            <h2>Welcome to My Resume Page</h2>
+            <a href="resume.html">Visit my Resume</a>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="projects">
-      <h2 class="title">Projects</h2>
-      <div class="project-card">
-        <div class="project-title">
-          <h3>Website Redisign</h3>
-          <h3>WIP</h3>
-          <h3>My First Game</h3>
+      </section>
+      <section class="projects">
+        <h2 class="title">Projects</h2>
+        <div class="project-card">
+          <div class="project-title">
+            <h3>Website Redisign</h3>
+            <h3>WIP</h3>
+            <h3>My First Game</h3>
+          </div>
+          <div class="project-images">
+            <a href="project1.html"><img src="./images/projectcard1.jpg" alt="Project Card One" />
+            <a href="project2.html"><img src="./images/projectcard2.jpg" alt="Project Card Two" />
+            <a href="project3.html"><img src="./images/projectcard3.jpg" alt="Project Card Two"> </a>
+          </div>
+          <div class="project-summary">
+            <h3>My first project is going to be redisigning the Ruby's Cafe website. It is by no means a bad 
+              website but it is a little outdated but it is one of my favorite restaurants so I really wanted to work on it.</h3>
+            <h3> Project 2</h3>
+            <h3>For my third project, I want to teach myself C# and try to recreate flappy bird. 
+              I have zero experience in C# but I do have some for python and I'm hoping that will translate.</h3>
+          </div>
         </div>
-        <div class="project-images">
-          <a href="project1.html"><img src="./images/projectcard1.jpg" alt="Project Card One" />
-          <a href="project2.html"><img src="./images/projectcard2.jpg" alt="Project Card Two" />
-          <a href="project3.html"><img src="./images/projectcard3.jpg" alt="Project Card Two"> </a>
-        </div>
-        <div class="project-summary">
-          <h3>My first project is going to be redisigning the Ruby's Cafe website. It is by no means a bad 
-            website but it is a little outdated but it is one of my favorite restaurants so I really wanted to work on it.</h3>
-          <h3> Project 2</h3>
-          <h3>For my third project, I want to teach myself C# and try to recreate flappy bird. 
-            I have zero experience in C# but I do have some for python and I'm hoping that will translate.</h3>
-        </div>
-      </div>
-    </section>
-    <section class="bg-gray-100 py-16">
-      <ul class="max-w-7xl mx-auto px-6 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        
-        <!-- Testimonial 1 -->
-        <li>
-          <figure class="bg-gray-50 rounded-2xl shadow-md p-8 h-full flex flex-col justify-between">
-            
-            <blockquote class="relative">
-              <span class="absolute -top-4 left-0 text-6xl text-gray-200 font-serif">“</span>
-              <p class="text-gray-600 leading-relaxed relative z-10">
-                CSCI 181 completely changed how I think about the internet. 
-                I finally understand the “magic” behind the websites I use every day.
-              </p>
-            </blockquote>
-
-            <figcaption class="mt-8 flex items-center gap-4">
-              <img 
-                src="images/headshot1.jpg" 
-                alt="Leeroy Jenkins headshot"
-                class="w-12 h-12 rounded-full object-cover"
-              />
-              <div>
-                <p class="font-semibold text-gray-800">Leeroy Jenkins</p>
-                <p class="text-sm text-gray-500">
-                  Freshman, Computer Science
+      </section>
+      <section class="bg-gray-100 py-16">
+        <ul class="max-w-7xl mx-auto px-6 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          
+          <!-- Testimonial 1 -->
+          <li>
+            <figure class="bg-gray-50 rounded-2xl shadow-md p-8 h-full flex flex-col justify-between">
+              
+              <blockquote class="relative">
+                <span class="absolute -top-4 left-0 text-6xl text-gray-200 font-serif">“</span>
+                <p class="text-gray-600 leading-relaxed relative z-10">
+                  CSCI 181 completely changed how I think about the internet. 
+                  I finally understand the “magic” behind the websites I use every day.
                 </p>
-              </div>
-            </figcaption>
+              </blockquote>
 
-          </figure>
-        </li>
+              <figcaption class="mt-8 flex items-center gap-4">
+                <img 
+                  src="images/headshot1.jpg" 
+                  alt="Leeroy Jenkins headshot"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                  <p class="font-semibold text-gray-800">Leeroy Jenkins</p>
+                  <p class="text-sm text-gray-500">
+                    Freshman, Computer Science
+                  </p>
+                </div>
+              </figcaption>
 
-        <!-- Testimonial 2 -->
-        <li>
-          <figure class="bg-gray-50 rounded-2xl shadow-md p-8 h-full flex flex-col justify-between">
-            
-            <blockquote class="relative">
-              <span class="absolute -top-4 left-0 text-6xl text-gray-200 font-serif">“</span>
-              <p class="text-gray-600 leading-relaxed relative z-10">
-                Now I have the confidence to build my own website. 
-                The instructor was really supportive and the material was always relevant.
-              </p>
-            </blockquote>
+            </figure>
+          </li>
 
-            <figcaption class="mt-8 flex items-center gap-4">
-              <img 
-                src="images/headshot2.jpg" 
-                alt="Jessica Jones headshot"
-                class="w-12 h-12 rounded-full object-cover"
-              />
-              <div>
-                <p class="font-semibold text-gray-800">Jessica Jones</p>
-                <p class="text-sm text-gray-500">
-                  Freshman, Software Engineering
+          <!-- Testimonial 2 -->
+          <li>
+            <figure class="bg-gray-50 rounded-2xl shadow-md p-8 h-full flex flex-col justify-between">
+              
+              <blockquote class="relative">
+                <span class="absolute -top-4 left-0 text-6xl text-gray-200 font-serif">“</span>
+                <p class="text-gray-600 leading-relaxed relative z-10">
+                  Now I have the confidence to build my own website. 
+                  The instructor was really supportive and the material was always relevant.
                 </p>
-              </div>
-            </figcaption>
+              </blockquote>
 
-          </figure>
-        </li>
+              <figcaption class="mt-8 flex items-center gap-4">
+                <img 
+                  src="images/headshot2.jpg" 
+                  alt="Jessica Jones headshot"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                  <p class="font-semibold text-gray-800">Jessica Jones</p>
+                  <p class="text-sm text-gray-500">
+                    Freshman, Software Engineering
+                  </p>
+                </div>
+              </figcaption>
 
-        <!-- Testimonial 3 -->
-        <li>
-          <figure class="bg-gray-50 rounded-2xl shadow-md p-8 h-full flex flex-col justify-between">
-            
-            <blockquote class="relative">
-              <span class="absolute -top-4 left-0 text-6xl text-gray-200 font-serif">“</span>
-              <p class="text-gray-600 leading-relaxed relative z-10">
-                I learned so much about the principles of design and usability. 
-                I didn’t know coding could be so fun and creative!
-              </p>
-            </blockquote>
+            </figure>
+          </li>
 
-            <figcaption class="mt-8 flex items-center gap-4">
-              <img 
-                src="images/headshot3.jpg" 
-                alt="Yamada Hanako headshot"
-                class="w-12 h-12 rounded-full object-cover"
-              />
-              <div>
-                <p class="font-semibold text-gray-800">Yamada Hanako</p>
-                <p class="text-sm text-gray-500">
-                  Junior, Media Arts
+          <!-- Testimonial 3 -->
+          <li>
+            <figure class="bg-gray-50 rounded-2xl shadow-md p-8 h-full flex flex-col justify-between">
+              
+              <blockquote class="relative">
+                <span class="absolute -top-4 left-0 text-6xl text-gray-200 font-serif">“</span>
+                <p class="text-gray-600 leading-relaxed relative z-10">
+                  I learned so much about the principles of design and usability. 
+                  I didn’t know coding could be so fun and creative!
                 </p>
-              </div>
-            </figcaption>
+              </blockquote>
 
-          </figure>
-        </li>
+              <figcaption class="mt-8 flex items-center gap-4">
+                <img 
+                  src="images/headshot3.jpg" 
+                  alt="Yamada Hanako headshot"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                  <p class="font-semibold text-gray-800">Yamada Hanako</p>
+                  <p class="text-sm text-gray-500">
+                    Junior, Media Arts
+                  </p>
+                </div>
+              </figcaption>
 
-      </ul>
-    </section>
+            </figure>
+          </li>
+
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
