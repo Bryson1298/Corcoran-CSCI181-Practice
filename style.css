@@ -221,3 +221,10 @@ nav a[aria-current="page"] {
   font-weight: bold;
   text-decoration: underline;
 }
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
